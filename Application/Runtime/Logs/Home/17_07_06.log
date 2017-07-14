@@ -1,0 +1,1487 @@
+[ 2017-07-06T22:14:00+08:00 ] ::1 /efan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+
+[ 2017-07-06T22:14:01+08:00 ] ::1 /efan/index.php/Home/Main/Index/index/key/WELCOMEINDEX.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Main/Index/index' AND `key` = 'WELCOMEINDEX' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350441  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0037s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0035s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350441  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'WELCOMEINDEX' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350441  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_notice` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_notice` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `efan_notice` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000388s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\a13dae09a421c6f3da00619f94a7ad1a.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2017-07-06T22:14:04+08:00 ] ::1 /efan/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+
+[ 2017-07-06T22:14:05+08:00 ] ::1 /efan/index.php/Home/User/User/index/key/USERLIST.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'User/User/index' AND `key` = 'USERLIST' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350445  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350445  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0033s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'USERLIST' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350445  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`major`,`permision`,`state` FROM `efan_user`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_permision` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 127 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 128 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 129 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 130 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 131 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 243 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 285 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 328 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2017-07-06T22:14:11+08:00 ] ::1 /efan/index.php/Home/User/User/leadingIn/key/USERLEADINGIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'User/User/leadingIn' AND `key` = 'USERLEADINGIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'USERLEADINGIN'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'USERLEADINGIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350451  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0032s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350451  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0032s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0034s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'USERLEADINGIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350451  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: title C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\ad4a8ed9a0f79b673c5ad5d34199e889.php 第 155 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\ad4a8ed9a0f79b673c5ad5d34199e889.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-07-06T22:15:17+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0033s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350517  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0097s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350517  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0034s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0033s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499350517  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2017-07-06T22:29:58+08:00 ] ::1 /efan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-07-06T22:29:59+08:00 ] ::1 /efan/index.php/Home/Main/Index/index/key/WELCOMEINDEX.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Main/Index/index' AND `key` = 'WELCOMEINDEX' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0039s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351399  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351399  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'WELCOMEINDEX' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351399  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_notice` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_notice` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `efan_notice` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\a13dae09a421c6f3da00619f94a7ad1a.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-07-06T22:30:03+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-07-06T22:30:15+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0033s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351415  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351415  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0032s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0033s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351415  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-07-06T22:30:29+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/submit/key/MOBILECREATIVESUBMIT.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/submit' AND `key` = 'MOBILECREATIVESUBMIT' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0035s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351429  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499351429  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0032s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVESUBMIT' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-07-06T22:42:54+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/submit/key/MOBILECREATIVESUBMIT.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/submit' AND `key` = 'MOBILECREATIVESUBMIT' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499352174  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499352174  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0035s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0036s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVESUBMIT' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+
+[ 2017-07-06T22:42:59+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499352179  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0029s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499352179  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0030s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0029s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499352179  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2017-07-06T22:43:06+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/submit/key/MOBILECREATIVESUBMIT.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/submit' AND `key` = 'MOBILECREATIVESUBMIT' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0033s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499352186  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499352186  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0029s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0032s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVESUBMIT' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative` [ RunTime:0.0032s ]
+
+[ 2017-07-06T23:14:13+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/submit/key/MOBILECREATIVESUBMIT.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/submit' AND `key` = 'MOBILECREATIVESUBMIT' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0039s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354053  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354053  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0033s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVESUBMIT' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+
+[ 2017-07-06T23:14:17+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354057  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354057  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0033s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354057  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-07-06T23:14:25+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/submit/key/MOBILECREATIVESUBMIT.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/submit' AND `key` = 'MOBILECREATIVESUBMIT' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354065  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354065  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0033s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0036s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVESUBMIT' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative` [ RunTime:0.0039s ]
+SQL: INSERT INTO `efan_mobile_creative` (`uid`,`title`,`group`,`content`,`time`) VALUES ('18','1312321321','2','<p>13213313121312<br/></p>','1499354057') [ RunTime:0.0008s ]
+
+[ 2017-07-06T23:24:55+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0040s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354695  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0029s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354695  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0029s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0030s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354695  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+
+[ 2017-07-06T23:25:13+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354713  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354713  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0030s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0030s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354713  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-06T23:28:27+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354907  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354907  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354907  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-06T23:28:34+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354914  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0029s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354914  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0032s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354914  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2017-07-06T23:29:00+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354940  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354940  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0029s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499354940  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-07-06T23:36:27+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/submit/key/MOBILECREATIVESUBMIT.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/submit' AND `key` = 'MOBILECREATIVESUBMIT' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355387  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0037s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355387  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0035s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0035s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVESUBMIT' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-06T23:36:57+08:00 ] ::1 /efan/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-07-06T23:36:58+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/submit/key/MOBILECREATIVESUBMIT.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/submit' AND `key` = 'MOBILECREATIVESUBMIT' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVESUBMIT'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355418  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0033s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355418  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0030s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVESUBMIT' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: creaitve_time_start C:\phpStudy\WWW\efan\Application\Home\Controller\Mobile\CreativeController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_mobile_creative` WHERE `uid` = 18 AND `time` >= null LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `efan_mobile_creative` (`uid`,`title`,`group`,`content`,`time`) VALUES ('18','1111','1','<p>12313123123121<br/></p>','1499354940') [ RunTime:0.0002s ]
+
+[ 2017-07-06T23:37:36+08:00 ] ::1 /efan/index.php/Home/User/User/index/key/USERLIST.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'User/User/index' AND `key` = 'USERLIST' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0034s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355456  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355456  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'USERLIST' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355456  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`major`,`permision`,`state` FROM `efan_user`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_permision` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 127 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 128 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 129 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 130 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 131 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 243 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 285 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 328 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-07-06T23:37:37+08:00 ] ::1 /efan/index.php/Home/User/Message/index/key/USERMESSAGE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'User/Message/index' AND `key` = 'USERMESSAGE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'USERMESSAGE'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'USERMESSAGE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0038s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355457  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0033s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355457  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0033s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0035s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'USERMESSAGE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0032s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0033s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355457  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `efan_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\2d0d9b68cc55dfb9eae5adbdf5267a7e.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-07-06T23:37:38+08:00 ] ::1 /efan/index.php/Home/User/User/index/key/USERLIST.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'User/User/index' AND `key` = 'USERLIST' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355458  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0029s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355458  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'USERLIST' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355458  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`major`,`permision`,`state` FROM `efan_user`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_permision` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 127 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 128 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 129 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 130 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 131 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 243 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 285 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 328 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2017-07-06T23:37:40+08:00 ] ::1 /efan/index.php/Home/User/User/index/key/USERLIST.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'User/User/index' AND `key` = 'USERLIST' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'USERLIST'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355460  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0029s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355460  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0032s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0031s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'USERLIST' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355460  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`major`,`permision`,`state` FROM `efan_user`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_permision` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `efan_permision` WHERE `class` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 127 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 128 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 129 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 130 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 131 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 172 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 173 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 174 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 175 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 176 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 177 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 243 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 285 行.
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\8cc16675c4c4cf00393fc15126d7c183.php 第 328 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-07-06T23:37:47+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355467  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355467  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0034s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0034s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499355467  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+

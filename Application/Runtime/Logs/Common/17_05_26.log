@@ -1,0 +1,84 @@
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/kindeditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/plugins/code/prettify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002685s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/themes/default/default.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/plugins/code/prettify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/themes/default/default.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/plugins/code/prettify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/kindeditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:10+08:00 ] ::1 /efan/Public/plugins/code/prettify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T10:37:51+08:00 ] ::1 /efan/Public/kindeditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005721s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T12:48:10+08:00 ] ::1 /efan/zentao
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T12:48:22+08:00 ] ::1 /efan/Zentao/www
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-05-26T13:33:26+08:00 ] ::1 /efan/Zentao/www
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Efan
+

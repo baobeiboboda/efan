@@ -1,0 +1,24 @@
+[ 2017-06-05T23:07:54+08:00 ] ::1 /efan/Public/Home/js/recruit.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-06-05T23:07:54+08:00 ] ::1 /efan/Public/Home/js/recruit.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-06-05T23:08:54+08:00 ] ::1 /efan/Public/Home/js/recruit.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-06-05T23:08:55+08:00 ] ::1 /efan/Public/Home/js/recruit.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载模块:Efan
+

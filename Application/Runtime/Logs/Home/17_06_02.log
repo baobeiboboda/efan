@@ -1,0 +1,106 @@
+[ 2017-06-02T16:54:02+08:00 ] 140.205.205.5 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-02T16:54:03+08:00 ] 140.205.205.5 /index.php/Home/Main/Index/index/key/WELCOMEINDEX.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Main/Index/index' AND `key` = 'WELCOMEINDEX' AND `hide` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: group_id C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0000s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1496393643  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 6  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0000s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1496393643  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0156s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','CREATIVECLUB','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLIST','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','RECRUIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','TEAMDAILY','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','USERDELETE','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMI','USERINTERIMPERMISUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','WELCOMEINDEX','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICESUBMIT') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0000s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'WELCOMEINDEX' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 6  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0000s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1496393643  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-02T21:32:46+08:00 ] 140.205.205.5 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-02T21:32:48+08:00 ] 140.205.205.5 /index.php/Home/Main/Index/index/key/WELCOMEINDEX.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Main/Index/index' AND `key` = 'WELCOMEINDEX' AND `hide` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: group_id C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0000s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1496410368  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\xampp\htdocs\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 6  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0000s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1496410368  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0156s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','CREATIVECLUB','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLIST','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSYBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','RECRUIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','TEAMDAILY','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','USERDELETE','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMI','USERINTERIMPERMISUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','WELCOMEINDEX','WELCOMEINDEXNOTICE','WELCOMEINDEXNOTICESUBMIT') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0000s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'WELCOMEINDEX' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 6  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0000s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1496410368  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

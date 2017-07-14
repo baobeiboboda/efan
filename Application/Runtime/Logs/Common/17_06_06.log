@@ -1,0 +1,30 @@
+[ 2017-06-06T22:49:35+08:00 ] ::1 /efan/Public/Home/js/recruit.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-06-06T22:49:35+08:00 ] ::1 /efan/Public/Home/js/recruit.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: 无法加载模块:Efan
+
+[ 2017-06-06T23:09:13+08:00 ] ::1 /efan/index.php/Index_PATH_NAMELogin/Public/sendCode.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+ERR: 无法加载模块:Index_PATH_NAMELogin
+
+[ 2017-06-06T23:09:50+08:00 ] ::1 /efan/index.php/Index_PATH_NAMELogin/Public/sendCode.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+ERR: 无法加载模块:Index_PATH_NAMELogin
+
+[ 2017-06-06T23:09:58+08:00 ] ::1 /efan/index.php/Index_PATH_NAMELogin/Public/sendCode.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000334s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+ERR: 无法加载模块:Index_PATH_NAMELogin
+

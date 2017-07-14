@@ -1,0 +1,1003 @@
+[ 2017-07-11T22:17:52+08:00 ] ::1 /efan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+
+[ 2017-07-11T22:17:53+08:00 ] ::1 /efan/index.php/Home/Main/Index/index/key/WELCOMEINDEX.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Main/Index/index' AND `key` = 'WELCOMEINDEX' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0040s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782673  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0026s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782673  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0026s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0027s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'WELCOMEINDEX' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0028s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782673  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_notice` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_notice` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `efan_notice` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000378s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\a13dae09a421c6f3da00619f94a7ad1a.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2017-07-11T22:17:56+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:15+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:16+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:16+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:16+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:17+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:17+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:17+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:17+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:17+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:18+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:18+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:18+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:18+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:18+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:18+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:19+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:19+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:19+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:18:19+08:00 ] ::1 /efan/index.php/Home/Moblie/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+ERR: 无法加载控制器:Moblie/Creative
+
+[ 2017-07-11T22:19:19+08:00 ] ::1 /efan/index.php/Home/Main/Index/index/key/WELCOMEINDEX.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Main/Index/index' AND `key` = 'WELCOMEINDEX' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0028s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782759  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0028s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782759  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0030s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0026s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'WELCOMEINDEX' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0031s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782759  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_notice` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_notice` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `efan_notice` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\a13dae09a421c6f3da00619f94a7ad1a.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2017-07-11T22:19:21+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0033s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782761  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0032s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782761  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0029s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0032s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0028s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499782761  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2017-07-11T22:19:31+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileleader/index/key/MOBILELEADER.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载控制器:Mobile/Mobileleader
+
+[ 2017-07-11T22:23:17+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载控制器:Mobile/Mobileadmin
+
+[ 2017-07-11T22:24:32+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+ERR: 无法加载控制器:Mobile/Mobileadmin
+
+[ 2017-07-11T22:24:48+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+ERR: 无法加载控制器:Mobile/Mobileadmin
+
+[ 2017-07-11T22:24:49+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载控制器:Mobile/Mobileadmin
+
+[ 2017-07-11T22:25:07+08:00 ] ::1 /efan/index.php/Home/Mobile/Creative/index/key/MOBILECREATIVE.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Creative/index' AND `key` = 'MOBILECREATIVE' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILECREATIVE'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0027s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783107  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0030s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783107  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0025s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0025s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILECREATIVE' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0023s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0027s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783107  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `efan_mobile_creative_time` ORDER BY creative_time_start desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `efan_mobile_group` WHERE `active` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\165c058da1d42f59e7f032a35dae1abd.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2017-07-11T22:25:09+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+ERR: 无法加载控制器:Mobile/Mobileadmin
+
+[ 2017-07-11T22:27:09+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0027s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783229  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0023s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0025s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783229  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0028s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0027s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0078s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783229  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-07-11T22:35:06+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0058s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783705  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0061s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0059s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783706  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0060s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0062s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0056s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0067s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499783706  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-07-11T23:42:20+08:00 ] ::1 /efan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-07-11T23:42:21+08:00 ] ::1 /efan/index.php/Home/Main/Index/index/key/WELCOMEINDEX.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Main/Index/index' AND `key` = 'WELCOMEINDEX' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'WELCOMEINDEX'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0067s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787741  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0063s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0063s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787741  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0058s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0062s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'WELCOMEINDEX' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0056s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0065s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787741  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_notice` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_notice` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `efan_notice` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: Think C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\a13dae09a421c6f3da00619f94a7ad1a.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2017-07-11T23:42:24+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0059s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787744  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0059s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0057s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787744  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0060s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0057s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0054s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0057s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787744  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0057s ]
+SQL: SELECT `info` FROM `efan_mobile_creative_time` WHERE `creative_time_start` >= 1469894401 AND `creative_time_end` <= 1469894401 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-07-11T23:42:24+08:00 ] ::1 /efan/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2017-07-11T23:42:36+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0063s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787756  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0056s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0062s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787756  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0061s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0059s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0059s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0057s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787756  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0063s ]
+SQL: SELECT `info` FROM `efan_mobile_creative_time` WHERE `creative_time_start` >= 1469894401 AND `creative_time_end` <= 1469894401 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2017-07-11T23:42:45+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0057s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787765  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0059s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0056s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787765  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0058s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0057s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0058s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0060s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787765  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0064s ]
+SQL: SELECT `info` FROM `efan_mobile_creative_time` WHERE `creative_time_start` >= 1469894401 AND `creative_time_end` <= 1469894401 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2017-07-11T23:42:56+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0057s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787776  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0057s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787776  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0057s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0059s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0057s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0062s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787776  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0057s ]
+SQL: SELECT `info` FROM `efan_mobile_creative_time` WHERE `creative_time_start` >= '1469894401' AND `creative_time_end` <= '1469894401' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-07-11T23:43:14+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0062s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787794  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0057s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0058s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787794  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0065s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0059s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0059s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787794  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0057s ]
+SQL: SELECT `info` FROM `efan_mobile_creative_time` WHERE `creative_time_start` >= '1469894401' AND `creative_time_end` <= '1469894401' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-07-11T23:43:48+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0063s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787828  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0055s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0057s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787828  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0058s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0057s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0056s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499787828  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-07-11T23:47:34+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0067s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499788054  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0065s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0058s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499788054  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0061s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0061s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0058s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0061s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499788054  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-07-11T23:48:13+08:00 ] ::1 /efan/index.php/Home/Mobile/Mobileadmin/index/key/MOBILEADMIN.efan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [8] Use of undefined constant URL_HTML_SUFFIX - assumed 'URL_HTML_SUFFIX' C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 211 行.
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `efan_module` WHERE `url` = 'Mobile/Mobileadmin/index' AND `key` = 'MOBILEADMIN' AND `hide` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: group_id C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 173 行.
+SQL: SELECT DISTINCT  `permision` FROM `efan_auth_group_module` WHERE `module_key` = 'MOBILEADMIN'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0083s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499788093  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: authGroupAccess C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\phpStudy\WWW\efan\Application\Home\Controller\HomeController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0082s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0061s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499788093  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0061s ]
+SQL: SELECT `title`,`url`,`key`,`pid`,`pic` FROM `efan_module` WHERE `key` IN ('CREATIVECLUB','CREATIVECLUBLIST','CREATIVECLUBLISTREPLY','CREATIVECLUBLISTREPLYDELETE','CREATIVECLUBLISTREPLYDISCUSS','CREATIVECLUBLISTREPLYREPLY','CREATIVECLUBLISTREPLYRETURN','INFORMATION','INFORMATIONBUG','INFORMATIONBUGSUBMIT','INFORMATIONCHANGEPASSWORD','INFORMATIONCHANGEPASSWORDSUBMIT','INFORMATIONLOGINOUT','INFORMATIONUSER','INFORMATIONUSERSUBMIT','MOBILE','MOBILECREATIVE','MOBILECREATIVESUBMIT','MOBILELIST','MOBILELISTDELETE','MOBILELISTEDIT','MOBILELISTEDITSUBMIT','MOBILELISTLOOK','TEAMDAILY','TEAMDAILYLIST','TEAMDAILYLISTLOOK','TEAMDAILYLISTUPLOAD','TEAMDAILYNEW','TEAMDAILYOTHER','TEAMDAILYOTHERSUBMIT','TEAMDAILYSUBMIT','WELCOMEINDEX','WELCOMEINDEXNOTICE','MOBILESCORE','MOBILESCORESCORE','MOBILESCORESCORESUBMIT','CREATIVECLUBADMIN','CREATIVECLUBADMINCLOSE','CREATIVECLUBADMINCOUNTNO','CREATIVECLUBADMINDELETE','CREATIVECLUBADMINDOWNLOAD','CREATIVECLUBADMINEDIT','CREATIVECLUBADMINEDITEDIT','CREATIVECLUBADMINGROUP','CREATIVECLUBADMINGROUPSUBMIT','CREATIVECLUBADMINLEADINGIN','CREATIVECLUBADMINOPEN','CREATIVECLUBADMINPDF','CREATIVECLUBLISTEDIT','CREATIVECLUBLISTEDITSUBMIT','CREATIVECLUBLISTREPLYEDIT','CREATIVECLUBLISTREPLYEDITSUBMIT','CREATIVECLUBNEW','CREATIVECLUBNEWSUBMIT','MOBIELADMINSUBMITTIMENEWSUBMIT','MOBILEADMIN','MOBILEADMINDELETE','MOBILEADMINEDIT','MOBILEADMINEDITSUBMIT','MOBILEADMINGROUPLIST','MOBILEADMINGROUPLISTDELETE','MOBILEADMINGROUPLISTEDIT','MOBILEADMINGROUPLISTEDITSUBMIT','MOBILEADMINGROUPLISTLOCK','MOBILEADMINGROUPLISTNEW','MOBILEADMINGROUPLISTNEWSUBMIT','MOBILEADMINGROUPLISTUNLOCK','MOBILEADMINSUBMITTIME','MOBILEADMINSUBMITTIMEDELETE','MOBILEADMINSUBMITTIMEEDIT','MOBILEADMINSUBMITTIMEEDITSUBMIT','MOBILEADMINSUBMITTIMENEW','MOBILEADMINUPLOADLEADER','RECRUIT','RECRUITCHANGE','RECRUITINDEX','RECRUITVIEW','AUDITION','AUDITIONADD','AUDITIONEDIT','AUDITIONEDITSUBMIT','AUDITIONIN','AUDITIONINTERIM','AUDITIONLAST','AUDITIONNEXT','AUDITIONOUT','AUDITIONROTATION','AUDITIONSENDMESSAGE','AUDITIONTIME','AUDITIONTIMESUBMIT','RECRUITADMIN','RECRUITADMINNEW','RECRUITADMINNEWSUBMIT','SYSTEM','SYSTEMMAJOREDIT','SYSTEMMAJORINDEX','SYSTEMMAJORNEW','SYSTEMMAJORNEWSUBMIT','USERCHANGEPERMISION','USERDELETE','USERDISLIMITLOGIN','USEREDIT','USEREDITSUBMIT','USERINFORMATION','USERINTERIMPERMISION','USERINTERIMPERMISIONDELETE','USERINTERIMPERMISIONEDIT','USERINTERIMPERMISIONEDITSUBMIT','USERINTERIMPERMISIONNEW','USERINTERIMPERMISIONNEWSUBMIT','USERLEADINGIN','USERLEADINGINSUBMIT','USERLIMITLOGIN','USERLIST','USERMESSAGE','USERMESSAGESEND','USERNEW','USERNEWSUBMIT','USERRESETPASSWORLD','USERTEMPLEDOWNLOAD','WELCOMEINDEXNOTICEDELETE','WELCOMEINDEXNOTICEDISIMPORTANT','WELCOMEINDEXNOTICEEDIT','WELCOMEINDEXNOTICEEDITSUBMIT','WELCOMEINDEXNOTICEIMPORTANT','WELCOMEINDEXNOTICENEW','WELCOMEINDEXNOTICENEWSUBMIT','MOBILELEADER','MOBILELEADERCHANGE','MOBILELEADERCHANGESUBMIT','TEAMDAILYADMIN','TEAMDAILYADMINLOOK','TEAMDAILYADMINMAKE') AND `hide` = 0 AND `type` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `efan_module` [ RunTime:0.0061s ]
+SQL: SELECT `url`,`key` FROM `efan_module` WHERE `hide` = 0 AND `pid` = 'MOBILEADMIN' AND `type` = 2 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `efan_auth_group_module` [ RunTime:0.0058s ]
+SQL: SELECT DISTINCT  `module_key` FROM `efan_auth_group_module` WHERE `permision` <= 10  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `efan_interim_permision` [ RunTime:0.0067s ]
+SQL: SELECT `interimpermision` FROM `efan_interim_permision` WHERE `uid` = 18 AND `time` > 1499788093  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_user` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`name`,`uid`,`url` FROM `efan_user` WHERE `uid` = 18  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_group` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `efan_mobile_group`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `efan_mobile_creative_time` [ RunTime:0.0060s ]
+SQL: SELECT `info` FROM `efan_mobile_creative_time` WHERE `creative_time_start` <= '1469894401' AND `creative_time_end` >= '1469894401' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: userList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 162 行.
+NOTIC: [8] Undefined variable: permisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 275 行.
+NOTIC: [8] Undefined variable: interimPermisionList C:\phpStudy\WWW\efan\Application\Runtime\Cache\Home\d2752404b8487697e839958f51f740c9.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
