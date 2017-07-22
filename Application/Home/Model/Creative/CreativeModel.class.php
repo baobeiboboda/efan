@@ -11,22 +11,11 @@ class CreativeModel extends Model
 		return $this->getField('id,uid,creativetitle,group,state,pdfurl');
 	}
 
-	/**
-	 * @param  [type]
-	 * @return [type]
-	 */
 	public function insertCreative($value)
 	{
 		return $this->data($value)->add();
 	}
 
-	/**
-	 * { function_description }
-	 *
-	 * @param      <type>  $id     The identifier
-	 *
-	 * @return     <type>  ( description_of_the_return_value )
-	 */
 	public function findCreativeById($id)
 	{
 		return $this->where(array('id' => $id))->find();
@@ -56,4 +45,5 @@ class CreativeModel extends Model
 	{
 		return $this->where(array('id' => array('in',$id)))->delete();
 	}
+
 }

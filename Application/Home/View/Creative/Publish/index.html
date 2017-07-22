@@ -151,14 +151,28 @@
 								<div class="col-sm-10">
 									<select class="form-control" id="group" name="group">
 										<option value="0">请选择</option>
-										<option value="1">物联网</option>
-										<option value="2">桌面应用（PC方向）</option>
-										<option value="3">工业4.0</option>
-										<option value="4">经济类</option>
-										<option value="5">手机APP（Android/IOS/Windows Phone/微信）</option>
+										<foreach name="creativeGroup" item="vo">
+											<option value="{$vo.id}">{$vo.group}</option>
+										</foreach>
 									</select>
 								</div>
 							</div>
+						<div class="form-group-separator"></div>
+						<div class="form-group" id="dname">
+							<label class="col-sm-2 control-label" for="name">姓名</label>
+								
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="name" name="name" placeholder="姓名" onblur="javascript:findUID()" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBNEWFINDUID']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBNEWFINDUID']['key']))?>">
+							</div>
+						</div>
+						<div class="form-group-separator"></div>
+						<div class="form-group" id="duid">
+							<label class="col-sm-2 control-label" for="uid">团队编号</label>
+								
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="uid" name="uid" value="自动获取" readonly="readonly">
+							</div>
+						</div>
 						<div class="form-group-separator"></div>
 						<div class="form-group" id="dcontent">
 							<label class="col-sm-2 control-label" for="content">内容</label>

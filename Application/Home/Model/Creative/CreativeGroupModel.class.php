@@ -16,6 +16,6 @@ class CreativeGroupModel extends Model
 
 	public function selectAllAbledGroup()
 	{
-		return $this->where(array('active' => 1))->select();
+		return $this->where(array('active' => 1))->field('id,group')->select();
 	}
 }

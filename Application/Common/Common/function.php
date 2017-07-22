@@ -598,7 +598,8 @@ function sendMailWithAtt($to,$title,$content,$filePath) {
 /**
  * 验证码核对
  */
-function check_verify($code, $id='') {
+function check_verify($code, $id='')
+{
     $verify = new \Think\Verify();
     return $verify->check($code, $id);
 }
@@ -612,6 +613,21 @@ function uidWithYF($uid) {
             break;
         case 3:
             $uid = 'YF_' . $uid;
+            return $uid;
+            break;
+    }
+}
+
+function uidWithoutYF($uid = 0)
+{
+    $keyPoint = substr($uid , -3 , 1);
+    switch ($keyPoint) {
+        case 0:
+            $uid = substr($uid, -2);
+            return $uid;
+            break;    
+        default:
+            $uid = substr($uid, -3);
             return $uid;
             break;
     }

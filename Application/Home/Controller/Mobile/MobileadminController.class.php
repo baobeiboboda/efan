@@ -1,16 +1,16 @@
 <?php
  
- namespace Home\Controller\Mobile;
+namespace Home\Controller\Mobile;
 
- use Home\Controller\HomeController;
- use Home\Model\Mobile\MobileGroupModel;
- use Home\Model\Mobile\MobileCreativeTimeModel;
- use Home\Model\Mobile\MobileCreativeModel;
- use Home\Model\User\UserModel;
+use Home\Controller\HomeController;
+use Home\Model\Mobile\MobileGroupModel;
+use Home\Model\Mobile\MobileCreativeTimeModel;
+use Home\Model\Mobile\MobileCreativeModel;
+use Home\Model\User\UserModel;
 
- class MobileadminController extends HomeController
- {
- 	public function index()
+class MobileadminController extends HomeController
+{
+	public function index()
  	{
  		$mobileGroupModel = new MobileGroupModel();
  		$mobileGroupList = $mobileGroupModel->selectAllMobileGroup();
@@ -29,4 +29,4 @@
  		$this->assign('mobileGroup', $mobileGroupList);
  		$this->display();
  	}
- }
+}

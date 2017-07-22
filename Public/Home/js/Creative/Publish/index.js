@@ -14,7 +14,7 @@ $(function(){
 		}else{
 			$('#dgroup').removeClass('has-error');	
 		}
-		// $(this).attr("disabled","disabled");
+		$(this).attr("disabled","disabled");
 		$.ajax({
 			type: "POST",
 		    url: $("#btnsubmit").attr('_href'),
@@ -33,3 +33,30 @@ $(function(){
 		});
 	});
 });
+
+function findUID()
+{
+	if($("#name").val() == ''){
+		$("#dname").addClass('has-error');
+		$("#name").focus();
+		return false;
+	}else{
+		$("#dname").removeClass('has-error');
+	}
+	$.ajax({
+		type: 'POST',
+		url: $("#name").attr('_href'),
+		data: {
+			'name' : $("#name").val(),
+		},
+		dataType: 'json',
+		success: function (jsonResult) {
+			if(jsonResult.status == 1){
+				$("#uid").val(jsonResult.uid);
+				$("#name").attr("readonly","readonly");
+			}else{
+				alert(jsonResult.info);
+			}
+		}
+	});
+}

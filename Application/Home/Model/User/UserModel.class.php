@@ -129,8 +129,14 @@ class UserModel extends Model
 	{
 		return $this->where(array('id' => $id))->field('uid')->find();
 	}
+
 	public function deleteUserById($id)
 	{
 		return $this->where(array('id' => $id))->delete();
+	}
+
+	public function findUidByName($name)
+	{
+		return $this->where(array('name' => $name))->field('uid')->find();
 	}
 }

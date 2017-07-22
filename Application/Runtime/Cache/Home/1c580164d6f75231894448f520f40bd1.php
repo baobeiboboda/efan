@@ -8,16 +8,16 @@
 	<meta name="description" content="Xenon Boostrap Admin Panel" />
 	<meta name="author" content="" />	
 	<title><?php echo ($TMPL_TITLE); ?></title>
-	<link rel="stylesheet" href="/efan/Public/assets/font/font.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/linecons/css/linecons.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/bootstrap.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-core.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-forms.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-components.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-skins.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/custom.css">
-	<script src="/efan/Public/assets/js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="/Public/assets/font/font.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/Public/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-core.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-components.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="/Public/assets/css/custom.css">
+	<script src="/Public/assets/js/jquery-1.11.1.min.js"></script>
 	
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
@@ -36,10 +36,10 @@
 					<!-- 这里是网站的logo -->
 					<div class="logo">
 						<a href="dashboard-1.html" class="logo-expanded">
-							<img src="/efan/Public/assets/images/logo@2x.png" width="80" alt="" />
+							<img src="/Public/assets/images/logo@2x.png" width="80" alt="" />
 						</a>
 						<a href="dashboard-1.html" class="logo-collapsed">
-							<img src="/efan/Public/assets/images/logo-collapsed@2x.png" width="40" alt="" />
+							<img src="/Public/assets/images/logo-collapsed@2x.png" width="40" alt="" />
 						</a>
 					</div>	
 				</header>
@@ -68,7 +68,7 @@
 				<ul class="user-info-menu right-links list-inline list-unstyled">
 					<li class="dropdown user-profile">
 						<a href="#" data-toggle="dropdown">
-							<img src="/efan/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<img src="/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
 							<span>
 								<?php echo ($__INFO__["name"]); ?>
 								<i class="fa-angle-down"></i>
@@ -143,22 +143,34 @@
 								<div class="col-sm-10">
 									<select class="form-control" id="group" name="group">
 										<option value="0">请选择</option>
-										<option value="1">物联网</option>
-										<option value="2">桌面应用（PC方向）</option>
-										<option value="3">工业4.0</option>
-										<option value="4">经济类</option>
-										<option value="5">手机APP（Android/IOS/Windows Phone/微信）</option>
+										<?php if(is_array($creativeGroup)): foreach($creativeGroup as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["group"]); ?></option><?php endforeach; endif; ?>
 									</select>
 								</div>
 							</div>
+						<div class="form-group-separator"></div>
+						<div class="form-group" id="dname">
+							<label class="col-sm-2 control-label" for="name">姓名</label>
+								
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="name" name="name" placeholder="姓名" onblur="javascript:findUID()" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBNEWFINDUID']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBNEWFINDUID']['key']))?>">
+							</div>
+						</div>
+						<div class="form-group-separator"></div>
+						<div class="form-group" id="duid">
+							<label class="col-sm-2 control-label" for="uid">团队编号</label>
+								
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="uid" name="uid" value="自动获取" readonly="readonly">
+							</div>
+						</div>
 						<div class="form-group-separator"></div>
 						<div class="form-group" id="dcontent">
 							<label class="col-sm-2 control-label" for="content">内容</label>
 								
 							<div class="col-sm-10">
-								<script type="text/javascript" charset="utf-8" src="/efan/Public/assets/ueditor/ueditor.config.js"></script>
-						    	<script type="text/javascript" charset="utf-8" src="/efan/Public/assets/ueditor/ueditor.all.min.js"> </script>
-						    	<script type="text/javascript" charset="utf-8" src="/efan/Public/assets/ueditor/lang/zh-cn/zh-cn.js"></script>
+								<script type="text/javascript" charset="utf-8" src="/Public/assets/ueditor/ueditor.config.js"></script>
+						    	<script type="text/javascript" charset="utf-8" src="/Public/assets/ueditor/ueditor.all.min.js"> </script>
+						    	<script type="text/javascript" charset="utf-8" src="/Public/assets/ueditor/lang/zh-cn/zh-cn.js"></script>
 						    	<script id="content" name="content" type="text/plain" style="width:1024px;height:500px;"></script>
 							    <script>
 									var ue = UE.getEditor('content');
@@ -192,21 +204,21 @@
 	</div>
 	<!-- 这以下模板中的JS/CSS/FONT/IMAGES 都直接引用PUBLIC_ 其他的ajax 之类的见开发说明 -->
 
-	<script type="text/javascript" src="/efan/Public/Home/js/Creative/Publish/index.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/Creative/Publish/index.js"></script>
 
 	<!-- 这以下的是HOME中的第二个不同 详情看模板的最下方的引用 sublimetext中可以ctrl+D批量修改 -->
-	<link rel="stylesheet" href="/efan/Public/assets/js/datatables/dataTables.bootstrap.css">
-	<script src="/efan/Public/assets/js/bootstrap.min.js"></script>
-	<script src="/efan/Public/assets/js/TweenMax.min.js"></script>
-	<script src="/efan/Public/assets/js/resizeable.js"></script>
-	<script src="/efan/Public/assets/js/joinable.js"></script>
-	<script src="/efan/Public/assets/js/xenon-api.js"></script>
-	<script src="/efan/Public/assets/js/xenon-toggles.js"></script>
-	<script src="/efan/Public/assets/js/datatables/js/jquery.dataTables.min.js"></script>
-	<script src="/efan/Public/assets/js/datatables/dataTables.bootstrap.js"></script>
-	<script src="/efan/Public/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
-	<script src="/efan/Public/assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
-	<script src="/efan/Public/assets/js/xenon-custom.js"></script>
+	<link rel="stylesheet" href="/Public/assets/js/datatables/dataTables.bootstrap.css">
+	<script src="/Public/assets/js/bootstrap.min.js"></script>
+	<script src="/Public/assets/js/TweenMax.min.js"></script>
+	<script src="/Public/assets/js/resizeable.js"></script>
+	<script src="/Public/assets/js/joinable.js"></script>
+	<script src="/Public/assets/js/xenon-api.js"></script>
+	<script src="/Public/assets/js/xenon-toggles.js"></script>
+	<script src="/Public/assets/js/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="/Public/assets/js/datatables/dataTables.bootstrap.js"></script>
+	<script src="/Public/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+	<script src="/Public/assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+	<script src="/Public/assets/js/xenon-custom.js"></script>
 	
 </body>
 </html>
