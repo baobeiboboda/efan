@@ -79,9 +79,6 @@ class CreativeController extends HomeController
 			// 获取当前创意的相关信息
 			$userModel = new UserModel;
 			$name = $userModel->findNameByUid($creative['uid']);
-			if($creative['uid'] == UID){
-				$creative['enable'] = 1;
-			}
 			$creative['name'] = $name['name'];
 			$creative['submittime'] = date('Y-m-d H:i:s', $creative['submittime']);
 			$creativeGroupModel = new CreativeGroupModel;
@@ -216,6 +213,7 @@ class CreativeController extends HomeController
 				'id' => I('get.id'),
 				'token' => $token,
 				);
+			print_r($creative);die;
 			$this->assign('message', $message);
 			$this->assign('creativeGroup', $creativeGroup);
 			$this->assign('creative', $creative);

@@ -124,17 +124,17 @@
 							<div class="mail-single-header">
 								<h2>
 									<?php echo ($creative["creativetitle"]); ?>
-									<span class="badge badge-success badge-roundless pull-right upper">Envato</span>
+									<!-- <span class="badge badge-success badge-roundless pull-right upper">Envato</span>
 									<span class="badge badge-red badge-roundless pull-right upper">Friends</span>
-									<span class="badge badge-warning badge-roundless pull-right upper">Google</span>
+									<span class="badge badge-warning badge-roundless pull-right upper">Google</span> -->
 								</h2>
 								
 								<div class="mail-single-header-options">
-									<a class="btn btn-gray btn-icon">
+									<?php if(isset($actions['CREATIVECLUBLISTREPLYRETURN'])): ?><a href="<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTREPLYRETURN']['url'];echo U($str,array('key'=>'CREATIVECLUBLIST'))?>" class="btn btn-gray btn-icon">
 										<span>返回</span>
 										<i class="fa-reply-all"></i>
-									</a>
-									<?php if((isset($actions['CREATIVECLUBLISTREPLYEDIT'])) AND ($creative["enable"] == 1)): ?><a href="<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTREPLYEDIT']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTREPLYEDIT']['key'],'id'=>urlsafe_b64encode(authcode($creative['id'],'ENCODE'))))?>" class="btn btn-gray btn-icon">
+									</a><?php endif; ?>
+									<?php if(isset($actions['CREATIVECLUBLISTREPLYEDIT'])): ?><a href="<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTREPLYEDIT']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTREPLYEDIT']['key'],'id'=>urlsafe_b64encode(authcode($creative['id'],'ENCODE'))))?>" class="btn btn-gray btn-icon">
 										<span>编辑</span>
 										<i class="fa-pencil-square-o"></i>
 									</a><?php endif; ?>
