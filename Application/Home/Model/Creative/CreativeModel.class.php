@@ -26,9 +26,9 @@ class CreativeModel extends Model
 		return $this->getField('id,uid,creativetitle,group,state,zentaostate,pdfurl');	
 	}
 
-	public function updateCreative($id,$creativetitle,$group,$creative)
+	public function updateCreative($id,$value)
 	{
-		return $this->where(array('id' => $id))->data(array('creativetitle' => $creativetitle, 'group' => $group, 'creative' => $creative))->save();
+		return $this->where(array('id' => $id))->data($value)->save();
 	}
 
 	public function setStateOpenByIds($id)

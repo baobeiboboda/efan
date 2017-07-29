@@ -160,9 +160,6 @@
 									<if condition="(isset($actions['CREATIVECLUBLISTREPLY'])) AND ($vo.state eq 1)">
 										<button class="btn btn-success btn-xs" onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTREPLY']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTREPLY']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))));?>'">参与讨论</button>
 									</if>
-									<if condition="(isset($actions['CREATIVECLUBLISTEDIT'])) AND ($vo.enable eq 1)">
-										<button class="btn btn-success btn-xs"  onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTEDIT']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTEDIT']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))))?>'">编辑</button>
-									</if>
 								</td>
 							</tr>
 							</foreach>

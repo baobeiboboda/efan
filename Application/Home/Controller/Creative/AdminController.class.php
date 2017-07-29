@@ -53,15 +53,23 @@ class AdminController extends HomeController
 			}
 			$token = I('token');
 			$timeLimit = time()-session('token.time');
-			if(($token != session('token.token')) || ($timeLimit > 1200)){
+			if(($token != session('token.token')) or ($timeLimit > 1200)){
 				session('token', null);
 				return $this->error('非法操作，刷新当前页面后重试操作');
 			}
+			$uid = I('uid');
+			$uid = uidWithoutYF($uid);
 			$content = $_POST['content'];
 			$group = I('group');
 			$creativetitle = I('title');
 			$creativeModel = new CreativeModel;
-			$result = $creativeModel->updateCreative($id,$creativetitle,$group,$content);
+			$value = array(
+				'creativetitle' => $creativetitle,
+				'group' => $group,
+				'creative' => $content,
+				'uid' => $uid,
+				);
+			$result = $creativeModel->updateCreative($id,$value);
 			if($result){
 				return $this->success('修改提交成功');
 			}else{
@@ -90,6 +98,7 @@ class AdminController extends HomeController
 				'id' => I('get.id'),
 				'token' => $token,
 				);
+			$creative['uid'] = uidWithYF($creative['uid']);
 			$this->assign('message', $message);
 			$this->assign('creativeGroup', $creativeGroup);
 			$this->assign('creative', $creative);
@@ -136,5 +145,24 @@ class AdminController extends HomeController
 		}
 	}
 
+	public function findUID()
+	{
+		if(IS_AJAX){
+			$name = I('name');
+			if(empty($name)) return $this->error('姓名为空，请重新输入');
+			$userModel = new UserModel();
+			$uid = $userModel->findUidByName($name);
+			$uid = $uid['uid'];
+			if($uid){
+				$jsonResult = array(
+					'status' => 1,
+					'uid' => uidWithYF($uid),
+					);
+				return $this->ajaxReturn($jsonResult);
+			}else{
+				return $this->error('无法获取团队编号，请核对姓名');
+			}
+		}
+	}
 	
 }

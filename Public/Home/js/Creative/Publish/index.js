@@ -53,7 +53,6 @@ function findUID()
 		success: function (jsonResult) {
 			if(jsonResult.status == 1){
 				$("#uid").val(jsonResult.uid);
-				$("#name").attr("readonly","readonly");
 			}else{
 				alert(jsonResult.info);
 			}

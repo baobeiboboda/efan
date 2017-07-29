@@ -149,7 +149,6 @@
 								<td><?php echo ($vo["statedetail"]); ?></td>
 								<td>
 									<?php if((isset($actions['CREATIVECLUBLISTREPLY'])) AND ($vo["state"] == 1)): ?><button class="btn btn-success btn-xs" onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTREPLY']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTREPLY']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))));?>'">参与讨论</button><?php endif; ?>
-									<?php if((isset($actions['CREATIVECLUBLISTEDIT'])) AND ($vo["enable"] == 1)): ?><button class="btn btn-success btn-xs"  onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTEDIT']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTEDIT']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))))?>'">编辑</button><?php endif; ?>
 								</td>
 							</tr><?php endforeach; endif; ?>
 						</tbody>

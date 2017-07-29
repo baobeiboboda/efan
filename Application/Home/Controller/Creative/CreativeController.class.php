@@ -30,9 +30,6 @@ class CreativeController extends HomeController
 					break;
 			}
 			empty($creativeList['pdfurl'])? $creativeList['pdfurl'] = '0' : $creativeList['pdfurl'];
-			if(UID == $creativeList['uid']){
-				$creativeList['enable'] = 1;
-			}
 		}
 		$this->assign('lists', $creativeLists);
 		$this->display();
@@ -213,7 +210,6 @@ class CreativeController extends HomeController
 				'id' => I('get.id'),
 				'token' => $token,
 				);
-			print_r($creative);die;
 			$this->assign('message', $message);
 			$this->assign('creativeGroup', $creativeGroup);
 			$this->assign('creative', $creative);
