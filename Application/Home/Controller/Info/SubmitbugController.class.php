@@ -13,7 +13,6 @@ class SubmitbugController extends HomeController
 			$user = $this->__INFO__;
 			$bugInfo = $user['name'] . ' ' . date('Y-m-d H:i:s', time()) . ' ' . $bugInfo;
 			$result = sendMail('efan_large@163.com', $bugTitle, $bugInfo);
-			var_dump($result);
 			return $this->success('发送成功');
 		}else{
 			$this->display();

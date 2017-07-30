@@ -38,3 +38,29 @@ $(function(){
 		self.location=document.referrer;
 	});
 });
+
+function findUID()
+{
+	if($("#name").val() == ''){
+		$("#dname").addClass('has-error');
+		$("#name").focus();
+		return false;
+	}else{
+		$("#dname").removeClass('has-error');
+	}
+	$.ajax({
+		type: 'POST',
+		url: $("#name").attr('_href'),
+		data: {
+			'name' : $("#name").val(),
+		},
+		dataType: 'json',
+		success: function (jsonResult) {
+			if(jsonResult.status == 1){
+				$("#uid").val(jsonResult.uid);
+			}else{
+				alert(jsonResult.info);
+			}
+		}
+	});
+}

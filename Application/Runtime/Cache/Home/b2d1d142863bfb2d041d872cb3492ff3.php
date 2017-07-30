@@ -137,6 +137,22 @@
 							</div>
 						</div>
 						<div class="form-group-separator"></div>
+						<div class="form-group" id="dname">
+							<label class="col-sm-2 control-label" for="name">姓名</label>
+								
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="name" name="name" value="<?php echo ($creative["name"]); ?>" onblur="javascript:findUID()" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTREPLYEDITFINDUID']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTREPLYEDITFINDUID']['key']))?>">
+							</div>
+						</div>
+						<div class="form-group-separator"></div>
+						<div class="form-group" id="duid">
+							<label class="col-sm-2 control-label" for="uid">团队编号</label>
+								
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="uid" name="uid" value="<?php echo ($creative["uid"]); ?>" readonly="readonly">
+							</div>
+						</div>
+						<div class="form-group-separator"></div>
 						<div class="form-group" id="dgroup">
 								<label class="col-sm-2 control-label" for="group">类别</label>
 								
@@ -163,7 +179,6 @@
 							    </script>
 							</div>
 						</div>
-						<?php if(isset($actions['CREATIVECLUBLISTEDITSUBMIT'])): ?><a type="button" id="btnsubmit" name="btnsubmit" class="btn btn-blue btn-single pull-right" _href='<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTEDITSUBMIT']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTEDITSUBMIT']['key']))?>'>提交</a><?php endif; ?>
 						<?php if(isset($actions['CREATIVECLUBLISTREPLYEDITSUBMIT'])): ?><a type="button" id="btnsubmit" name="btnsubmit" class="btn btn-blue btn-single pull-right" _href='<?php $str = $Think.INDEX_PATH_NAME.$actions['CREATIVECLUBLISTREPLYEDITSUBMIT']['url'];echo U($str,array('key'=>$actions['CREATIVECLUBLISTREPLYEDITSUBMIT']['key']))?>'>提交</a><?php endif; ?>
 						<a type="button" id="btngoback" name="btngoback" class="btn btn-blue btn-single pull-right">返回</a>
 					</form>

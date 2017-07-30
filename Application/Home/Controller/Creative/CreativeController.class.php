@@ -201,6 +201,8 @@ class CreativeController extends HomeController
 			}
 			$userModel = new UserModel;
 			$name = $userModel->findNameByUid($creative['uid']);
+			$creative['name'] = $name['name'];
+			$creative['uid'] = uidWithYF($creative['uid']);
 			$creativeGroupModel = new CreativeGroupModel;
 			$creativeGroup = $creativeGroupModel->selectAllAbledGroup();
 			session('token.token', getToken());
@@ -214,6 +216,28 @@ class CreativeController extends HomeController
 			$this->assign('creativeGroup', $creativeGroup);
 			$this->assign('creative', $creative);
 			$this->display();
+		}
+	}
+
+	public function findUID()
+	{
+		if(IS_AJAX){
+			$name = I('name');
+			if(empty($name)) return $this->error('姓名为空，请重新输入');
+			$userModel = new UserModel();
+			$uid = $userModel->findUidByName($name);
+			$uid = $uid['uid'];
+			if($uid){
+				$jsonResult = array(
+					'status' => 1,
+					'uid' => uidWithYF($uid),
+					);
+				return $this->ajaxReturn($jsonResult);
+			}else{
+				return $this->error('无法获取团队编号，请核对姓名');
+			}
+		}else{
+			return $this->error('非法操作');
 		}
 	}
 

@@ -16,7 +16,7 @@ $(function (){
 			$('#dinfo').removeClass('has-error');	
 		}
 
-		// $(this).attr("disabled","disabled");
+		$(this).attr("disabled","disabled");
 
 		$.ajax({
 			type: "POST",
