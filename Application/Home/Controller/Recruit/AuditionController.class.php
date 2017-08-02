@@ -10,62 +10,22 @@ class AuditionController extends HomeController
 {
 	public function index()
 	{
-		if(IS_POST){
-			$id = I('id');
-			$id = authcode($id,'ENCODE');
-			$id = urlsafe_b64encode($id);
-			$result = array('status' => 1, 'id' => $id);
-			return $this->ajaxReturn($result,'JSON');
-		}
 		$recruitModel = new RecruitModel;
 		$auditionList = $recruitModel->findAuditionList();
+		$recruitTimeModel = new RecruitTimeModel;
+		$nowInfos = $recruitTimeModel->findNowInfo();
 		foreach ($auditionList as &$value) {
 			$value['birthday'] = date('Y-m-d', $value['birthday']);
 			$value['auditiontime'] = date('Y年m月d日 H:i', $value['auditiontime']);
-			switch ($value['rotation']) {
-				case 1:
-					$value['rotation'] = '第1轮';
-					break;
-				
-				case 2:
-					$value['rotation'] = '第2轮';
-					break;
-				
-				case 3:
-					$value['rotation'] = '地主约谈';
-					break;
-			}
-			switch ($value['message']) {
-				case 0:
-					$value['message'] = '未发送';
-					break;
-				
-				case 10:
-					$value['message'] = '一轮短信发送失败';
-					break;
-				
-				case 11:
-					$value['message'] = '一轮短信发送成功';
-					break;
-				
-				case 20:
-					$value['message'] = '二轮短信发送失败';
-					break;
-				
-				case 21:
-					$value['message'] = '二轮短信发送成功';
-					break;
-				
-				case 30:
-					$value['message'] = '地主约谈短信发送失败';
-					break;
-				
-				case 31:
-					$value['message'] = '地主约谈短信发送成功';
-					break;
+			if(($value['time'] >= $nowInfos['recruit_time_start']) and ($value['time'] <= $nowInfos['recruit_time_end'])){
+				$value['status'] = 1;
+			}else{
+				$value['status'] = 0;
 			}
 		}
 		$this->assign('audition',$auditionList);
+		$this->assign('rotation', C('AUDITION_ROTATION'));
+		$this->assign('messageStatus', C('AUDITION_MESSAGE_STATUS'));
 		$this->display();
 	}
 

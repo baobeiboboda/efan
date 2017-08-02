@@ -10,16 +10,16 @@
 	
 	<title><?php echo ($TMPL_TITLE); ?></title>
 
-	<link rel="stylesheet" href="/efan/Public/assets/font/font.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/linecons/css/linecons.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/bootstrap.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-core.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-forms.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-components.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-skins.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/custom.css">
-	<script src="/efan/Public/assets/js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="/Public/assets/font/font.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/Public/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-core.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-components.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="/Public/assets/css/custom.css">
+	<script src="/Public/assets/js/jquery-1.11.1.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -55,11 +55,11 @@
 					<!-- logo -->
 					<div class="logo">
 						<a href="dashboard-1.html" class="logo-expanded">
-							<img src="/efan/Public/assets/images/logo@2x.png" width="80" alt="" />
+							<img src="/Public/assets/images/logo@2x.png" width="80" alt="" />
 						</a>
 						
 						<a href="dashboard-1.html" class="logo-collapsed">
-							<img src="/efan/Public/assets/images/logo-collapsed@2x.png" width="40" alt="" />
+							<img src="/Public/assets/images/logo-collapsed@2x.png" width="40" alt="" />
 						</a>
 					</div>
 					
@@ -102,7 +102,7 @@
 				<ul class="user-info-menu right-links list-inline list-unstyled">
 					<li class="dropdown user-profile">
 						<a href="#" data-toggle="dropdown">
-							<img src="/efan/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<img src="/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
 							<span>
 								<?php echo ($__INFO__["name"]); ?>
 								<i class="fa-angle-down"></i>
@@ -324,28 +324,28 @@
 
 
 
-	<script type="text/javascript" src="/efan/Public/Home/js/Recruit/edit.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/Recruit/edit.js"></script>
 	<!-- Imported styles on this page -->
-	<link rel="stylesheet" href="/efan/Public/assets/js/datatables/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="/Public/assets/js/datatables/dataTables.bootstrap.css">
 
 	<!-- Bottom Scripts -->
-	<script src="/efan/Public/assets/js/bootstrap.min.js"></script>
-	<script src="/efan/Public/assets/js/TweenMax.min.js"></script>
-	<script src="/efan/Public/assets/js/resizeable.js"></script>
-	<script src="/efan/Public/assets/js/joinable.js"></script>
-	<script src="/efan/Public/assets/js/xenon-api.js"></script>
-	<script src="/efan/Public/assets/js/xenon-toggles.js"></script>
-	<script src="/efan/Public/assets/js/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="/Public/assets/js/bootstrap.min.js"></script>
+	<script src="/Public/assets/js/TweenMax.min.js"></script>
+	<script src="/Public/assets/js/resizeable.js"></script>
+	<script src="/Public/assets/js/joinable.js"></script>
+	<script src="/Public/assets/js/xenon-api.js"></script>
+	<script src="/Public/assets/js/xenon-toggles.js"></script>
+	<script src="/Public/assets/js/datatables/js/jquery.dataTables.min.js"></script>
 
 
 	<!-- Imported scripts on this page -->
-	<script src="/efan/Public/assets/js/datatables/dataTables.bootstrap.js"></script>
-	<script src="/efan/Public/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
-	<script src="/efan/Public/assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+	<script src="/Public/assets/js/datatables/dataTables.bootstrap.js"></script>
+	<script src="/Public/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+	<script src="/Public/assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
 
 
 	<!-- JavaScripts initializations and stuff -->
-	<script src="/efan/Public/assets/js/xenon-custom.js"></script>
+	<script src="/Public/assets/js/xenon-custom.js"></script>
 
 </body>
 </html>

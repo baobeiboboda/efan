@@ -83,6 +83,8 @@ class PublishController extends HomeController
 			}else{
 				return $this->error('无法获取团队编号，请核对姓名');
 			}
+		}else{
+			return $this->error('非法操作');
 		}
 	}
 }

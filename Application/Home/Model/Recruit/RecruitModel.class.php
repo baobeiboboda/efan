@@ -27,7 +27,7 @@ class RecruitModel extends Model
 
 	public function findAuditionList()
 	{
-		return $this->select();
+		return $this->order('id desc')->select();
 	}
 
 	public function findSendInfoByIds($id)

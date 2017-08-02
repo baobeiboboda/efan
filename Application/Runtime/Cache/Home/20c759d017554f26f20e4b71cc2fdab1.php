@@ -10,17 +10,17 @@
 	
 	<title><?php echo ($TMPL_TITLE); ?></title>
 
-	<link rel="stylesheet" href="/efan/Public/assets/font/font.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/linecons/css/linecons.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/bootstrap.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-core.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-forms.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-components.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-skins.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/custom.css">
+	<link rel="stylesheet" href="/Public/assets/font/font.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/Public/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-core.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-components.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="/Public/assets/css/custom.css">
 
-	<script src="/efan/Public/assets/js/jquery-1.11.1.min.js"></script>
+	<script src="/Public/assets/js/jquery-1.11.1.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -47,7 +47,7 @@
 				<ul class="user-info-menu right-links list-inline list-unstyled">
 					<li class="dropdown user-profile">
 						<a href="#" data-toggle="dropdown">
-							<img src="/efan/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<img src="/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
 							<span>
 								<?php echo ($__INFO__["name"]); ?>
 								<i class="fa-angle-down"></i>
@@ -271,41 +271,41 @@
 	
 	
 
-	<script type="text/javascript" src="/efan/Public/Home/js/Recruit/recruit.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/Recruit/recruit.js"></script>
 
 
 	<!-- Imported styles on this page -->
-	<link rel="stylesheet" href="/efan/Public/assets/js/daterangepicker/daterangepicker-bs3.css">
-	<link rel="stylesheet" href="/efan/Public/assets/js/select2/select2.css">
-	<link rel="stylesheet" href="/efan/Public/assets/js/select2/select2-bootstrap.css">
-	<link rel="stylesheet" href="/efan/Public/assets/js/multiselect/css/multi-select.css">
+	<link rel="stylesheet" href="/Public/assets/js/daterangepicker/daterangepicker-bs3.css">
+	<link rel="stylesheet" href="/Public/assets/js/select2/select2.css">
+	<link rel="stylesheet" href="/Public/assets/js/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="/Public/assets/js/multiselect/css/multi-select.css">
 
 	<!-- Bottom Scripts -->
-	<script src="/efan/Public/assets/js/bootstrap.min.js"></script>
-	<script src="/efan/Public/assets/js/TweenMax.min.js"></script>
-	<script src="/efan/Public/assets/js/resizeable.js"></script>
-	<script src="/efan/Public/assets/js/joinable.js"></script>
-	<script src="/efan/Public/assets/js/xenon-api.js"></script>
-	<script src="/efan/Public/assets/js/xenon-toggles.js"></script>
-	<script src="/efan/Public/assets/js/moment.min.js"></script>
+	<script src="/Public/assets/js/bootstrap.min.js"></script>
+	<script src="/Public/assets/js/TweenMax.min.js"></script>
+	<script src="/Public/assets/js/resizeable.js"></script>
+	<script src="/Public/assets/js/joinable.js"></script>
+	<script src="/Public/assets/js/xenon-api.js"></script>
+	<script src="/Public/assets/js/xenon-toggles.js"></script>
+	<script src="/Public/assets/js/moment.min.js"></script>
 
 
 	<!-- Imported scripts on this page -->
-	<script src="/efan/Public/assets/js/daterangepicker/daterangepicker.js"></script>
-	<script src="/efan/Public/assets/js/datepicker/bootstrap-datepicker.js"></script>
-	<script src="/efan/Public/assets/js/timepicker/bootstrap-timepicker.min.js"></script>
-	<script src="/efan/Public/assets/js/colorpicker/bootstrap-colorpicker.min.js"></script>
-	<script src="/efan/Public/assets/js/select2/select2.min.js"></script>
-	<script src="/efan/Public/assets/js/jquery-ui/jquery-ui.min.js"></script>
-	<script src="/efan/Public/assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
-	<script src="/efan/Public/assets/js/tagsinput/bootstrap-tagsinput.min.js"></script>
-	<script src="/efan/Public/assets/js/typeahead.bundle.js"></script>
-	<script src="/efan/Public/assets/js/handlebars.min.js"></script>
-	<script src="/efan/Public/assets/js/multiselect/js/jquery.multi-select.js"></script>
+	<script src="/Public/assets/js/daterangepicker/daterangepicker.js"></script>
+	<script src="/Public/assets/js/datepicker/bootstrap-datepicker.js"></script>
+	<script src="/Public/assets/js/timepicker/bootstrap-timepicker.min.js"></script>
+	<script src="/Public/assets/js/colorpicker/bootstrap-colorpicker.min.js"></script>
+	<script src="/Public/assets/js/select2/select2.min.js"></script>
+	<script src="/Public/assets/js/jquery-ui/jquery-ui.min.js"></script>
+	<script src="/Public/assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
+	<script src="/Public/assets/js/tagsinput/bootstrap-tagsinput.min.js"></script>
+	<script src="/Public/assets/js/typeahead.bundle.js"></script>
+	<script src="/Public/assets/js/handlebars.min.js"></script>
+	<script src="/Public/assets/js/multiselect/js/jquery.multi-select.js"></script>
 
 
 	<!-- JavaScripts initializations and stuff -->
-	<script src="/efan/Public/assets/js/xenon-custom.js"></script>
+	<script src="/Public/assets/js/xenon-custom.js"></script>
 
 </body>
 </html>

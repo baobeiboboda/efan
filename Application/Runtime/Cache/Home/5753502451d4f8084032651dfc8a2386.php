@@ -10,16 +10,16 @@
 	
 	<title><?php echo ($TMPL_TITLE); ?></title>
 
-	<link rel="stylesheet" href="/efan/Public/assets/font/font.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/linecons/css/linecons.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/bootstrap.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-core.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-forms.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-components.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/xenon-skins.css">
-	<link rel="stylesheet" href="/efan/Public/assets/css/custom.css">
-	<script src="/efan/Public/assets/js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="/Public/assets/font/font.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="/Public/assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/Public/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-core.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-components.css">
+	<link rel="stylesheet" href="/Public/assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="/Public/assets/css/custom.css">
+	<script src="/Public/assets/js/jquery-1.11.1.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -55,11 +55,11 @@
 					<!-- logo -->
 					<div class="logo">
 						<a href="dashboard-1.html" class="logo-expanded">
-							<img src="/efan/Public/assets/images/logo@2x.png" width="80" alt="" />
+							<img src="/Public/assets/images/logo@2x.png" width="80" alt="" />
 						</a>
 						
 						<a href="dashboard-1.html" class="logo-collapsed">
-							<img src="/efan/Public/assets/images/logo-collapsed@2x.png" width="40" alt="" />
+							<img src="/Public/assets/images/logo-collapsed@2x.png" width="40" alt="" />
 						</a>
 					</div>
 					
@@ -102,7 +102,7 @@
 				<ul class="user-info-menu right-links list-inline list-unstyled">
 					<li class="dropdown user-profile">
 						<a href="#" data-toggle="dropdown">
-							<img src="/efan/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<img src="/Public/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
 							<span>
 								<?php echo ($__INFO__["name"]); ?>
 								<i class="fa-angle-down"></i>
@@ -191,21 +191,23 @@
 						</thead>
 						<tbody>
 							<?php if(is_array($audition)): foreach($audition as $key=>$vo): ?><tr>
-								<td><input class="ids" type="checkbox" name="id" value="<?php echo ($vo["id"]); ?>"></td>
+								<td>
+									<?php if($vo["status"] == 1): ?><input class="ids" type="checkbox" name="id" value="<?php echo ($vo["id"]); ?>"><?php endif; ?>
+								</td>
 								<td><?php echo ($vo["studentid"]); ?></td>
 								<td><?php echo ($vo["name"]); ?></td>
 								<td><?php echo ($vo["auditiontime"]); ?></td>
-								<td><?php echo ($vo["rotation"]); ?></td>
-								<td><?php echo ($vo["message"]); ?></td>
+								<td><?php echo ($rotation[$vo['rotation']]); ?></td>
+								<td><?php echo ($messageStatus[$vo['message']]); ?></td>
 								<td>
-									<?php if($vo["state"] != 1): if(isset($actions['AUDITIONEDIT'])): ?><button class="btn btn-success btn-xs"  onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONEDIT']['url'];echo U($str,array('key'=>$actions['AUDITIONEDIT']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))))?>'">编辑</button><?php endif; ?>
-										<?php if(isset($actions['AUDITIONTIME'])): ?><button class="btn btn-danger btn-xs" onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONTIME']['url'];echo U($str,array('key'=>$actions['AUDITIONTIME']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))))?>'">更改时间</button><?php endif; ?>
-										<?php if(isset($actions['AUDITIONLAST']) and ($vo["rotation"] != '第1轮')): ?><button id="lastrotation<?php echo $vo['id'];?>" class="btn btn-black btn-xs" onclick="javascript:studentLast(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONLAST']['url'];echo U($str,array('key'=>$actions['AUDITIONLAST']['key']))?>">退回上一轮</button><?php endif; ?>
-										<?php if(isset($actions['AUDITIONNEXT']) and ($vo["rotation"] != '地主约谈')): ?><button id="nextrotation<?php echo $vo['id'];?>" class="btn btn-blue btn-xs" onclick="javascript:studentNext(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONNEXT']['url'];echo U($str,array('key'=>$actions['AUDITIONNEXT']['key']))?>">进入下一轮</button><?php endif; ?>
-										<?php if(isset($actions['AUDITIONSENDMESSAGE'])): ?><button id="sendmessage<?php echo $vo['id'];?>" class="btn btn-success btn-xs" onclick="javascript:sendMessage(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONSENDMESSAGE']['url'];echo U($str,array('key'=>$actions['AUDITIONSENDMESSAGE']['key']))?>">发送短信</button><?php endif; ?>
-										<?php if(isset($actions['AUDITIONOUT'])): ?><button id="studentout<?php echo $vo['id'];?>" class="btn btn-danger btn-xs"  onclick="javascript:studentOut(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONOUT']['url'];echo U($str,array('key'=>$actions['AUDITIONOUT']['key'],'id'=>$vo['id']))?>">淘汰</button><?php endif; ?>
-										<?php else: ?>
-										<?php if(isset($actions['AUDITIONIN'])): ?><button id="studentin<?php echo $vo['id'];?>" class="btn btn-danger btn-xs"  onclick="javascript:studentIn(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONIN']['url'];echo U($str,array('key'=>$actions['AUDITIONIN']['key'],'id'=>$vo['id']))?>">入围</button><?php endif; endif; ?>
+									<?php if(isset($actions['AUDITIONEDIT'])): ?><button class="btn btn-success btn-xs"  onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONEDIT']['url'];echo U($str,array('key'=>$actions['AUDITIONEDIT']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))))?>'">编辑</button><?php endif; ?>
+									<?php if($vo["status"] == 1): if($vo["state"] != 1): if(isset($actions['AUDITIONTIME'])): ?><button class="btn btn-danger btn-xs" onclick="window.location.href='<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONTIME']['url'];echo U($str,array('key'=>$actions['AUDITIONTIME']['key'],'id'=>urlsafe_b64encode(authcode($vo['id'],'ENCODE'))))?>'">更改时间</button><?php endif; ?>
+											<?php if(isset($actions['AUDITIONLAST']) and ($vo["rotation"] != 1)): ?><button id="lastrotation<?php echo $vo['id'];?>" class="btn btn-black btn-xs" onclick="javascript:studentLast(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONLAST']['url'];echo U($str,array('key'=>$actions['AUDITIONLAST']['key']))?>">退回上一轮</button><?php endif; ?>
+											<?php if(isset($actions['AUDITIONNEXT']) and ($vo["rotation"] != 3)): ?><button id="nextrotation<?php echo $vo['id'];?>" class="btn btn-blue btn-xs" onclick="javascript:studentNext(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONNEXT']['url'];echo U($str,array('key'=>$actions['AUDITIONNEXT']['key']))?>">进入下一轮</button><?php endif; ?>
+											<?php if(isset($actions['AUDITIONSENDMESSAGE'])): ?><button id="sendmessage<?php echo $vo['id'];?>" class="btn btn-success btn-xs" onclick="javascript:sendMessage(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONSENDMESSAGE']['url'];echo U($str,array('key'=>$actions['AUDITIONSENDMESSAGE']['key']))?>">发送短信</button><?php endif; ?>
+											<?php if(isset($actions['AUDITIONOUT'])): ?><button id="studentout<?php echo $vo['id'];?>" class="btn btn-danger btn-xs"  onclick="javascript:studentOut(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONOUT']['url'];echo U($str,array('key'=>$actions['AUDITIONOUT']['key'],'id'=>$vo['id']))?>">淘汰</button><?php endif; ?>
+											<?php else: ?>
+											<?php if(isset($actions['AUDITIONIN'])): ?><button id="studentin<?php echo $vo['id'];?>" class="btn btn-danger btn-xs"  onclick="javascript:studentIn(<?php echo $vo['id'];?>)" _href="<?php $str = $Think.INDEX_PATH_NAME.$actions['AUDITIONIN']['url'];echo U($str,array('key'=>$actions['AUDITIONIN']['key'],'id'=>$vo['id']))?>">入围</button><?php endif; endif; endif; ?>
 								</td>
 							</tr><?php endforeach; endif; ?>
 						</tbody>
@@ -247,28 +249,28 @@
 
 
 
-	<script type="text/javascript" src="/efan/Public/Home/js/Recruit/audition.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/Recruit/audition.js"></script>
 	<!-- Imported styles on this page -->
-	<link rel="stylesheet" href="/efan/Public/assets/js/datatables/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="/Public/assets/js/datatables/dataTables.bootstrap.css">
 
 	<!-- Bottom Scripts -->
-	<script src="/efan/Public/assets/js/bootstrap.min.js"></script>
-	<script src="/efan/Public/assets/js/TweenMax.min.js"></script>
-	<script src="/efan/Public/assets/js/resizeable.js"></script>
-	<script src="/efan/Public/assets/js/joinable.js"></script>
-	<script src="/efan/Public/assets/js/xenon-api.js"></script>
-	<script src="/efan/Public/assets/js/xenon-toggles.js"></script>
-	<script src="/efan/Public/assets/js/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="/Public/assets/js/bootstrap.min.js"></script>
+	<script src="/Public/assets/js/TweenMax.min.js"></script>
+	<script src="/Public/assets/js/resizeable.js"></script>
+	<script src="/Public/assets/js/joinable.js"></script>
+	<script src="/Public/assets/js/xenon-api.js"></script>
+	<script src="/Public/assets/js/xenon-toggles.js"></script>
+	<script src="/Public/assets/js/datatables/js/jquery.dataTables.min.js"></script>
 
 
 	<!-- Imported scripts on this page -->
-	<script src="/efan/Public/assets/js/datatables/dataTables.bootstrap.js"></script>
-	<script src="/efan/Public/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
-	<script src="/efan/Public/assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+	<script src="/Public/assets/js/datatables/dataTables.bootstrap.js"></script>
+	<script src="/Public/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+	<script src="/Public/assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
 
 
 	<!-- JavaScripts initializations and stuff -->
-	<script src="/efan/Public/assets/js/xenon-custom.js"></script>
+	<script src="/Public/assets/js/xenon-custom.js"></script>
 
 </body>
 </html>

@@ -50,7 +50,6 @@ class CreativeController extends HomeController
 			$mobileCreativeTime = $mobileCreativeTimeModel->findNowInfo();
 			if($time < $mobileCreativeTime['creative_time_start'] || $time > $mobileCreativeTime['creative_time_end']) return $this->error('当前不在允许提交创意的时间');
 			$mobileCreativeModel = new MobileCreativeModel();
-			$countUid = $mobileCreativeModel->countRowsByUid(UID,$mobileCreativeTime['creaitve_time_start']);
 			if($countUid != 0) return $this->error('已经提交创意，等待评审结果');
 			$title = I('title');
 			if(empty($title)) return $this->error('标题不能为空！');

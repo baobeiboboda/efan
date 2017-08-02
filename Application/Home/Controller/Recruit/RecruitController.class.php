@@ -9,7 +9,6 @@ class RecruitController extends HomeController
 {
 	public function index()
 	{
-		// echo U('', array('key' => I('key')));
 		$this->display();
 	}
 
