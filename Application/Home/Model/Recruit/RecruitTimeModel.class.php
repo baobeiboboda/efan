@@ -12,6 +12,6 @@ class RecruitTimeModel extends Model
 
 	public function findRecruitInfoByTime($time)
 	{
-		return $this->where(array('recruit_time_start' => array('ELT', $time),'recruit_end_time' => array('EGT', $time)))->field('info')->find();
+		return $this->where(array('recruit_time_start' => array('ELT', $time), 'recruit_time_end' => array('EGT', $time)))->field('info')->find();
 	}
 }

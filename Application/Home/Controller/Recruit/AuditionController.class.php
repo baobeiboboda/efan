@@ -171,6 +171,7 @@ class AuditionController extends HomeController
 				return $this->error('非法操作，刷新当前页面之后重新尝试');
 			}
 			$studentId = I('student_ID');
+			if(empty($studentId)) return $this->error('学号不能为空');
 			$name = I('name');
 			$phone = I('phone');
 			$college = I('college');
